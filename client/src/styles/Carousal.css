@@ -1,0 +1,17 @@
+body {
+  background-color: green;
+}
+
+.banner-image{
+  width: 100% ;
+  height: 30%;
+  object-fit: cover;
+}
+
+.slick-slide img {
+  margin: auto;
+  /* width: 100%;
+  height: 30%;
+  object-fit: cover; */
+
+}

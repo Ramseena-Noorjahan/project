@@ -1,0 +1,8 @@
+    const express = require ('express')
+    const app = express()
+    app.get('/',(req,res)=>{
+        res.send('hello')
+    })
+    app.listen(3030,()=>{
+        console.log("the server created port on 3030");
+    })

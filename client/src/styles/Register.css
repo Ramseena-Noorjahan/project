@@ -1,0 +1,23 @@
+/* body {
+  background-color: #9A616D;
+} */
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.str{
+  justify-content: center;
+}
+.imagestyle{
+  justify-content: center;
+  padding-top: 70px;
+}.form-style{
+  width: 400px;
+  padding-top: 30px;
+  padding-left: 40px;
+  justify-content: center;
+}
