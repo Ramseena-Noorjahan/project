@@ -169,24 +169,33 @@ const Register = () => {
   const [lname, setLname] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmpassword, setConfirmPassword] = useState("");
 
   const handleReset = () => {
     setFname("")
     setLname("")
     setEmail("");
     setPassword("");
+    setConfirmPassword("")
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-   axios.post("http://localhost:3030/api/register",{
-    fname,
-    lname,
-    email,
-    password,
-    // confirmpaasword
+  const handleSubmit = async (event) => {
+   event.preventDefault();
+    const response =  await axios.post("http://localhost:3030/api/register",{
+    headers:{
+  
+    }, 
+    body:JSON.stringify({
+      fname,
+      lname,
+      email,
+      password,
+      confirmpassword
+    }),
+   
    })
-    console.log("Form submitted!");
+   const data = await response.json()
+    console.log(data);
   };
 
   return (
@@ -200,63 +209,87 @@ const Register = () => {
               alt="Phone image"
             />
           </MDBCol>
-          <MDBCol col="8" md="4" className="form-style">
-            <div className="d-flex justify-content-between mb-2">
-              <MDBInput
+          <MDBCol col="8" md="4" className="form-style " >
+            <div className=" justify-content-between mb-2">
+              <MDBInput 
+                 className='input-style'
                 wrapperClass="d-inline-block mr-2"
-                placeholder="First Name"
+                placeholder="first Name"
                 id="name"
                 type="text"
-                size="sm"
+                
                 onChange={(e) =>
                   //  setFname(e.target.value)
                    console.log(e.target.value)}
-                value={fname}
-              />
+                // value={fname}
+              />  </div>
+               <div className=" justify-content-between mb-2">
               <MDBInput
+               className='input-style'
                 wrapperClass="d-inline-block"
-                placeholder="Last Name"
+                placeholder="last Name"
                 id="name"
                 type="text"
-                size="sm"
+             
                 onChange={(e) => setLname(e.target.value)}
                 value={lname}
               />
             </div>
-            <div className="d-flex justify-content-between mb-2">
+            <div className=" justify-content-between mb-2">
               <MDBInput
+              className='input-style'
+             
                 wrapperClass="d-inline-block mr-2"
                 placeholder="Email"
                 id="email"
                 type="email"
-                size="sm"
+             
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
-              />
+              /> </div>
+            <div className=" justify-content-between mb-2">
+
               <MDBInput
+               className='input-style'
                 wrapperClass="d-inline-block"
                 placeholder="Password"
                 id="password"
                 type="password"
-                size="sm"
+               
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
               />
             </div>
-            <MDBInput
-              wrapperClass="mb-2"
-              placeholder="Confirm Password"
-              id="passwordConfirmation"
-              type="password"
-              size="sm"
-              style={{ width: "100%" }}
-            />
-            <div className="d-flex justify-content-between">
-              <MDBBtn color="danger" size="sm" onClick={handleReset}>
+            <div className=" justify-content-between mb-2">
+
+              <MDBInput
+               className='input-style'
+                wrapperClass="d-inline-block"
+                placeholder="confirm password"
+                id="password"
+                type="password"
+               
+                onChange={(e) => setPassword(e.target.value)}
+                value={confirmpassword}
+              />
+              </div>
+                        
+              <div className="justify-content-between mb-3" style={{ paddingLeft: '30px' }}>
+              <MDBBtn className="input-style-1" color="danger"  onClick={handleReset}>
                 Reset
               </MDBBtn>
-              <MDBBtn color="dark" size="sm" onClick={handleSubmit}>
+              </div>
+              <div className="justify-content-between mb-3" style={{ paddingLeft: '30px' }}>
+              <MDBBtn className="input-style-1" color="dark"  onClick={handleSubmit}>
                 Submit
+              </MDBBtn>
+            </div>
+            <div className="divider  align-items-center my-4" style={{ paddingLeft: '80px' }} >
+      <p className=" fw-bold mx-3 mb-0">OR</p>
+    </div>
+    <div className="justify-content-between mb-3" style={{ paddingLeft: '30px' }}>
+              <MDBBtn className="input-style-1" color="dark"  onClick={handleSubmit}>
+                Signin
               </MDBBtn>
             </div>
           </MDBCol>
