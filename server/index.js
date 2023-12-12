@@ -2,7 +2,7 @@
     const app = express()
     const cors = require('cors')
     const mongoose= require("mongoose")
-    const User = ('./models/usermodels')
+    const User =require ('./models/usermodels')
     app.use(express.json())
     mongoose.connect('mongodb://127.0.0.1:27017/dress-collections')
     app.use(cors())
@@ -18,16 +18,14 @@
 
         })
         res.json({status:"ok"})
-        res.send(user)
+      
        } catch (error) {
         console.log(error)
         res.json({status:"error",error:'Duplicate email'})
        }
        
     })
-    app.listen(3030,()=>{
-        console.log("the server created port on 3030");
-    })
+    
 
     app.post('/api/login',async(req,res)=>{
        

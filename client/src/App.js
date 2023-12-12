@@ -15,12 +15,13 @@ import Profile from "./components/Profile"
 import Register from "./components/Register"
 import Login from './components/Login';
 import Footer from './components/Footer'
+
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar/>
-        <Footer/>
+       
         <Routes>
         <Route path='/register' element={<Register/>}/>
         <Route path='/login' element={<Login/>}/>
@@ -30,6 +31,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/profile' element={<Profile/>}/>
         </Routes>
+        <Footer/>
         </Router>
       
       </div>

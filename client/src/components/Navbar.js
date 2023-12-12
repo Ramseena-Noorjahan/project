@@ -12,7 +12,7 @@ import {
 const Navbar = () => {
     return (
         <>
-            <Nav>
+            <Nav >
                 <Bars />
  
                 <NavMenu>

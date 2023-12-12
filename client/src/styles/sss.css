@@ -1,0 +1,53 @@
+<div style={{ width: '100%', height: '500px', display: 'flex' ,paddingTop:"20px",marginLeft:"5px"}}>
+       
+       
+
+       
+<div style={{ flex: '1', display: 'flex', flexDirection: 'column' }}>
+  {/* First row with two divs */}
+  <div style={{ display: 'flex', flex: '1' }}>
+    <div className='groom-friends' style={{ flex: '0 0 60%', backgroundImage:"url('./assets/group-girls.jpg')" ,backgroundPosition: 'center center', backgroundSize: 'cover'}}>
+      
+      <h4>  brides friends collections </h4> 
+    </div>
+    <div style={{ flex: '0 0 40%'}}>
+      {/* Add your content for the second div in the right side */}
+    </div>
+  </div>
+
+  {/* Second row with three divs */}
+  <div style={{ display: 'flex', flex: '1' }}>
+    <div style={{ flex: '0 0 40%', backgroundColor: 'orange' }}>
+      {/* Add your content for the third div in the right side */}
+    </div>
+    <div style={{ flex: '0 0 30%', backgroundColor: 'yellow' }}>
+      {/* Add your content for the fourth div in the right side */}
+    </div>
+    <div style={{ flex: '0 0 30%', backgroundColor: 'purple' }}>
+      {/* Add your content for the fifth div in the right side */}
+    </div>
+  </div>
+</div>
+<div style={{ flex: '0 0 30%', height: '100%' ,backgroundImage:"url('./assets/top-trending.webp')",backgroundPosition: 'center center', backgroundSize: 'cover' }}>
+  <h4 style={{color:"white"}}>TOP TRENDING COLLECTIONS</h4>
+</div>
+
+
+</div> <div className='d-flex con'>
+<div style={{width:"40%",height:"500px",backgroundImage:"url('./assets/showoff3.webp')" ,backgroundPosition: 'center center', backgroundSize: 'cover', marginLeft:"40px"}}> </div>
+<div className='content-div1' style={{width:"55%",height:"500px",backgroundImage:"url('./assets/justshow.webp')" }}> </div>
+</div>
+
+
+
+
+<div style={{ width: '100%', height: '500px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+{/* Container div with specified height and width */}
+<div style={{ width: '80%', height: '80%', border: '2px solid black', display: 'flex', justifyContent: 'space-between' }}>
+  {/* Five child divs */}
+  <div style={{ width: '30%', height: '100%', backgroundColor: 'red' }}>"Shopping for a dress that'll have the cake in tiers"</div>
+  <div style={{ width: '30%', height: '100%', backgroundColor: 'green' }}></div>
+  <div style={{ width: '30%', height: '100%', backgroundColor: 'blue' }}></div>
+  
+</div>
+</div>

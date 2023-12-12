@@ -199,12 +199,12 @@ const Register = () => {
   };
 
   return (
-    <div>
+    <div className=' d-flex align-items-center justify-content-center'  style={{backgroundColor:"b",width:"700px",height:"500px",marginLeft:"310px",marginTop:"40px"}}>
       <MDBContainer fluid className="p-3 my-5">
         <MDBRow className="str">
           <MDBCol col="8" md="4" className="imagestyle">
             <img
-              src="https://media.istockphoto.com/id/664771198/vector/fear-of-commitment.jpg?s=612x612&w=0&k=20&c=g4oqxqYVxMKoaNUAGIIyC6tewmq6LrKKRgLcTzU2MEc=https://www.shutterstock.com/image-vector/faceless-indian-wedding-couple-together-standing-1815099008"
+              src="./assets/cartoon1.jpg"
               class="img-fluid"
               alt="Phone image"
             />
