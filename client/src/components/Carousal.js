@@ -48,11 +48,11 @@ const Carousel = () => {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src="https://zimsonwatches.com/cdn/shop/files/Discover_Breitling_Navitimer_Collections_1.png?v=1694606639&width=1500',
-" className="d-block w-100" alt="poo"/>
+          <img src="https://img.perniaspopupshop.com/wysiwyg/WEDDING/1InterimPageNBL08_09_22.jpg'
+" className="d-block w-100 h-100" alt="poo"/>
         </div>
-        <div className="carousel-item">
-          <img src="https://img.perniaspopupshop.com/wysiwyg/WEDDING/Aditi_Gupta_SBD_24-06-22.jpg" className="d-block w-100 " style={{backgroundSize:"contain"}} alt="ppp"  />
+        <div className="carousel-item " >
+          <img src="https://img.perniaspopupshop.com/wysiwyg/WEDDING/1InterimPageNBL08_09_22.jpg" className="d-block w-100 h-100  "  alt="ppp"  />
 
         </div>
         <div className="carousel-item">
