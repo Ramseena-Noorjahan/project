@@ -2,10 +2,13 @@
 
 .d-flex {
   display: flex;
+  flex-wrap: row;
+  
 }
 
 .con {
   margin-top: 30px;
+  padding: 20px;
 }
 
 .content-div {
@@ -175,6 +178,7 @@
   margin: 0 50px;
   margin-left: 50px;
   cursor: pointer;
+  padding-top: 30PX;
 
 }
 .img1:hover {
@@ -190,4 +194,5 @@
   grid-auto-flow :column;
   place-content: center;
   gap: 40px;
+  width :100%;
 }

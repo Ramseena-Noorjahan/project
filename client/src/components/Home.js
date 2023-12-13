@@ -15,19 +15,19 @@ const Home = () => {
     navigate('/menswear');
   };
 
-  const images = [
-    'https://zimsonwatches.com/cdn/shop/files/Discover_Breitling_Navitimer_Collections_1.png?v=1694606639&width=1500',
-    'https://zimsonwatches.com/cdn/shop/files/Discover_Breitling_Navitimer_Collections_1.png?v=1694606639&width=1500',
-  ];
+  // const images = [
+  //   'https://zimsonwatches.com/cdn/shop/files/Discover_Breitling_Navitimer_Collections_1.png?v=1694606639&width=1500',
+  //   'https://zimsonwatches.com/cdn/shop/files/Discover_Breitling_Navitimer_Collections_1.png?v=1694606639&width=1500',
+  // ];
 
   return (
-    <div>
-      <Carousal images={images} />
+    <div className='container-fluid'>
+      <Carousal  />
       <div className='d-flex con'>
         <div onClick={handleDivClick} className='content-div' style={{ flex: '0 0 43%', height: '500px', backgroundImage: "url('./assets/iii.webp')" }}>
           <h1>FOR HER</h1>
         </div>
-        <div onClick={handleDivClick1} className='content-div' style={{ flex: '0 0 43%', height: '500px', backgroundImage: "url('./assets/groom.jpg')" ,backgroundPosition: 'center center',backgroundSize:'contain',marginLeft:"50px"}}>
+        <div onClick={handleDivClick1} className='content-div' style={{ flex: '0 0 43%', height: '500px', backgroundImage: "url('./assets/groom.jpg')" ,backgroundPosition: 'center center',backgroundSize:'contain'}}>
           <h1>FOR HIM</h1>
         </div>
       </div>
@@ -129,11 +129,11 @@ const Home = () => {
 </div>
 
     
-      // writings
+    
     
     <div className='d-flex con'>
     <div style={{width:"40%",height:"500px",backgroundImage:"url('./assets/top-trending.webp')",backgroundPosition: 'center center', backgroundSize: 'cover' ,marginLeft:"30px"}}> </div>
-    <div style={{width:"55%",height:"500px",backgroundImage:"url('./assets/top-trending.webp')",backgroundPosition: 'center center', backgroundSize: 'cover' ,marginLeft:"30px"}}> </div>
+    <div style={{width:"40%",height:"500px",backgroundImage:"url('./assets/redgroom.jpg')",backgroundPosition: 'center center', backgroundSize: 'cover' ,marginLeft:"30px"}}> </div>
     </div>
     </div>
   );
@@ -147,32 +147,6 @@ export default Home;
 
 
 
-/* /* 
-/* Home.css */
 
-/* .wedquotes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 400px;
-  background-color: black;
-  margin-top: 20px;
-} */
 
-/* .wedquotes h1 {
-  color: white; /* Adjust text color as needed */
-  /* text-align: center; */
-/* } */ 
-/* .content-div{
-  display: flex;
-  flex-wrap: row;
-  padding: 20px;
-  font-size: 24px; /* Set the desired font size */
-/* } */ 
 
-/* .d-flex {
-  display: flex;
-  flex-wrap: row;
-/* }  */  
